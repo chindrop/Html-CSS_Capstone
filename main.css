@@ -5,3 +5,76 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
 }
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.top-nav {
+  height: 24px;
+  background-color: #494848;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.space {
+  padding: 0 6.5%;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+.main-nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background-color: #f8f8ff;
+}
+
+.head-logo {
+  text-decoration: none;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.head-logo .svg-logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 100%;
+  width: 9.3rem;
+}
+
+.left-main-nav a {
+  text-decoration: none;
+  color: rgb(74, 72, 72);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 10px;
+}
+
+a.active {
+  color: #ec5242;
+}
+
+.camp-btn {
+  border: 2px solid #ec5242;
+  padding: 5px;
+  color: #272a31;
+}
