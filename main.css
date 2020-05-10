@@ -230,5 +230,27 @@ a.active {
 .speakers-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+  padding: 10px 30px;
+}
+
+.speaker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-desc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 17px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .speakers-container {
+    grid-template-columns: 1fr;
+  }
+
 }
