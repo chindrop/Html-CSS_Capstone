@@ -9,7 +9,7 @@ body {
 nav {
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 900;
 }
 
 .top-nav {
@@ -81,23 +81,18 @@ a.active {
 
 .main-background {
   background-image: url(images/1.jpg);
-
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 700px; */
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   opacity: 0.9;
 }
 
 .over-title {
-  padding-top: 100px;
+  padding-top: 90px;
   color: #ec5242;
+  height: 10vw;
 }
 
 .program-cont {
@@ -165,8 +160,11 @@ a.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: transparent white;
-  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.programs:hover {
+  border: 2px solid white;
 }
 
 .programs-container {
@@ -189,7 +187,6 @@ a.active {
   .programs-container {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 @media only screen and (max-width: 576px) {
@@ -280,6 +277,217 @@ a.active {
 
 @media only screen and (max-width: 992px) {
   .partners-container {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
   }
+}
+
+.speak-img {
+  max-width: 150px;
+  height: 150px;
+}
+
+.speak-hr {
+  width: 32px;
+  border: 2px solid #272a31;
+  margin-top: 11px;
+  margin-bottom: 10px;
+}
+
+.title-hr {
+  width: 35px;
+  border: 2px solid #ec5242;
+}
+
+.below-tag {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.below-tag a {
+  text-decoration: none;
+  color: #d3d3d3;
+  font-size: 15px;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.small-desc {
+  color: #ec5242;
+}
+
+.svg-lo2 {
+  height: 100%;
+  width: 22rem;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.prog-icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.prog-details p{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.over-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.over-title h1 {
+  font-size: 4vw;
+}
+
+.over-title h2 {
+  font-weight: 900;
+  font-size: 5vw;
+  line-height: 0.9em;
+}
+
+.over-back p {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+
+.over-title p {
+  font-size: 2.5vw;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .over-title h1 {
+    font-size: 5vw;
+  }
+
+  .over-title h2 {
+    font-size: 7vw;
+  }
+
+  .over-back p {
+    font-size: 4vw;
+  }
+
+  .over-title p {
+    font-size: 6vw;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .partners-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .partners-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .partners-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .load-more {
+    background-color: #fff;
+    height: 25vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .more {
+    background-color: white;
+    height: 44px;
+    width: 80vw;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partners-cont {
+    display: none;
+  }
+
+  .speaker {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.text-copy {
+  margin: 30px 0;
+  font-weight: bold;
+}
+
+.load-more {
+  display: none;
+}
+
+@media only screen and (max-width: 200px) {
+  .programs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.about-first {
+  background-color: #d3d3d3;
+  height: 100%;
+}
+
+.whole-about {
+  padding: 70px;
 }
