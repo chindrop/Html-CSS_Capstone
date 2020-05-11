@@ -337,7 +337,7 @@ h4 {
   margin-bottom: 15px;
 }
 
-.prog-details p{
+.prog-details p {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -374,7 +374,6 @@ h4 {
   align-items: flex-start;
 }
 
-
 @media only screen and (max-width: 400px) {
   .over-title h1 {
     font-size: 5vw;
@@ -392,7 +391,6 @@ h4 {
     font-size: 6vw;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .partners-container {
@@ -485,9 +483,94 @@ h4 {
 
 .about-first {
   background-color: #d3d3d3;
-  height: 100%;
+  height: 120vh;
+  padding-top: 7rem;
+  border-bottom: 1px solid gray;
 }
 
 .whole-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #f2eeee;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  height: 100%;
+  width: 70%;
+}
+
+.whole-about-2 {
   padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-second {
+  background-color: white;
+  height: 100%;
+}
+
+.about-main-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  height: 100%;
+  width: 50%;
+}
+
+.about-main-2-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #494848;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  height: 100%;
+  width: 60%;
+}
+
+.svg-lo3 {
+  padding: 30px 0;
+}
+
+.about-third {
+  background-color: white;
+  height: 100%;
+}
+
+.whole-about-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-main-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
