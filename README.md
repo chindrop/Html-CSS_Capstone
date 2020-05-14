@@ -31,7 +31,7 @@
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
 - [Installation](#installation)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Live version](#live-version)
 - [Contributor](#contributor)
 - [Acknowledgements](#acknowledgements)
