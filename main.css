@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 html,
 body {
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 nav {
@@ -623,7 +623,7 @@ h4 {
   padding-top: 80px;
 }
 
-@media only screen  and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .past-image {
     flex-direction: column;
   }
@@ -645,7 +645,7 @@ h4 {
   margin-top: 40px;
 }
 
-@media only screen  and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .about-main-2 {
     width: 100%;
   }
@@ -664,12 +664,13 @@ h4 {
   }
 }
 
-.ticket-first {
+.ticket-first,
+.select-lunch {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 120px 20px;
+  padding: 120px 10px;
 }
 
 .ticket-step {
@@ -724,7 +725,8 @@ Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
   table {
     width: 100%;
   }
@@ -775,5 +777,82 @@ and also iPads specifically.
     content: attr(data-column);
     color: #000;
     font-weight: bold;
+  }
+}
+
+.top {
+  height: 35px;
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200%;
+  border: 0.5px solid rgb(212, 210, 210);
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.menu input {
+  margin-left: 5px;
+}
+
+.select-btn {
+  background-color: #ec5242;
+  height: 50px;
+  width: 20pc;
+  text-align: center;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1033px) {
+  .main-menu {
+    width: 130%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-menu {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .ticket-step,
+  .select-lunch {
+    width: 90%;
+  }
+
+  td:before {
+    white-space: normal;
+  }
+
+  .select-btn {
+    width: 80%;
   }
 }
